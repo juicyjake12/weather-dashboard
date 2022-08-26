@@ -7,18 +7,22 @@
 </head>
 
 <body>
-<div class="input">
-    <input type="text" class = "inputvalue" placeholder="enter a city">
-    <input type="submit" value = "submit" class="btn">
-</div>
-<div class="display">
-    <h1 class="name"></h1>
-    <p class="desc"></p>
-    <p class="temp"></p>
-</div>
+    <div class="weatherContainer">
+        <div class="search">
+          <input type="text" class="searchBar rounded border-4 border-slate-600 bg-slate-600 placeholder-white"
+            placeholder="search">
+          <button class="rounded border-4 border-sky-300 bg-sky-300">Get Weather</button>
+        </div>
 
 
-
+        <div id="weather" class="text-white">
+          <div id="city">city</div>
+          <div id="humidity">humidity</div>
+          <div id="temp">temp in city</div>
+          <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" id="icon" />
+          <div id="description">description of weather</div>
+        </div>
+      </div>
 
 
     <script src="./assets/js/javascript.js"></script>

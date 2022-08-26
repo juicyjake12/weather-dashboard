@@ -1,34 +1,10 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-body{
-    font-family: sans-serif;
-}
-.input{
-    text-align: center;
-}
-input[type="text"]{
-    height: 50px;
-    width: 600px;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 2px;
-    padding: 10px 10px;
-}
-input[type="submit"]{
-    height: 50px;
-    width: 600px;
-    background: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 2px;
-}
-.display{
-    text-align: center;
+.searchbtn{
+display: flex;
+justify-content: center;
+align-items: center;
 }
