@@ -5,6 +5,7 @@ var weather = {
             .then((response) => response.json())
             .then((data) => this.displayWeather(data));
     },
+    //display weather/weather types
     displayWeather: function (data) {
         const { temp, humidity } = data.main;
         const { name } = data;
@@ -17,6 +18,7 @@ var weather = {
         document.querySelector("#city").innerText = "weather in " + name;
         document.querySelector("#humidity").innerText = "humidity level:" + humidity + "%";
     },
+    //searchbox function to find city
     search: function () {
         this.fetchWeather(document.querySelector(".searchbox").value);
     },
@@ -25,4 +27,7 @@ var weather = {
 document.querySelector(".search button").addEventListener("click", function () {
     weather.search();
 });
+
+//local storage 
+
 
